@@ -1,1 +1,3 @@
 # redniT
+
+Machine meeting App
