@@ -1,4 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server');
+const db = require("./database");
 
 const typeDefs = gql`
   type Book {
@@ -21,6 +22,8 @@ const books = [
     author: 'Michael Crichton',
   },
 ];
+
+db.startDatabase();
 
 const resolvers = {
   Query: {
